@@ -1,0 +1,26 @@
+<html>
+  <body>
+
+    <h3>FORM:</h3>
+    <form action = "http://localhost:8081/process_get" method = "GET">
+      First Name: <input type ="text" name = "first_name"> <br><br>
+      Last Name: <input type = "text" name = "last_name">
+      <br>
+      <br>
+      <input type = "submit" value = "Submit">
+    </form>
+
+    <br>
+
+    <h3>FILE UPLOAD:</h3>
+    Select a file to upload: <br>
+
+    <form action = "http://localhost:8081/file_upload" method="POST" enctype="multipart/form-data">
+      <br>
+      <input type="file" name="file" size="50" />
+      <br><br>
+      <input type="submit" value="Upload File" />
+    </form>
+
+  </body>
+</html>
